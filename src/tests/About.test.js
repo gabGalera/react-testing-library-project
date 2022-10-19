@@ -44,7 +44,6 @@ describe('02. Teste o componente <About.js />.', () => {
       </MemoryRouter>,
     );
     const img = screen.getByAltText(/Pokédex/i);
-    console.log(img.src);
     expect(img.src).toBe('https://cdn2.bulbagarden.net/upload/thumb/8/86/Gen_I_Pok%C3%A9dex.png/800px-Gen_I_Pok%C3%A9dex.png');
   });
 });
