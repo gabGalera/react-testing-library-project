@@ -92,8 +92,6 @@ describe('06. Teste o componente <Pokemon.js />', () => {
       const fav = screen.getByLabelText(/Pokémon favoritado/i);
       userEvent.click(fav);
       const start = screen.getByAltText(/is marked as/i);
-      console.log(start);
-      console.log(pokemon);
       expect(start.alt).toBe(`${pokemon.name} is marked as favorite`);
       expect(start.src).toBe('http://localhost/star-icon.svg');
       userEvent.click(home);
